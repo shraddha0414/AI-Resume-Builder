@@ -1,0 +1,148 @@
+/* ResultPage.css */
+
+.result-container {
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.success-msg {
+  background-color: #e6f9ec;
+  color: #217a3c;
+  padding: 12px 20px;
+  border-left: 4px solid #34c759;
+  border-radius: 5px;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.result-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.layout-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.layout-selector select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.download-btn {
+  padding: 10px 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.download-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.resume-content {
+  display: flex;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.resume-content.split .left-pane {
+  width: 35%;
+  background-color: #0f172a;
+  color: white;
+  padding: 32px;
+}
+
+.resume-content.split .right-pane {
+  width: 65%;
+  padding: 32px;
+}
+
+.resume-content.linear {
+  flex-direction: column;
+}
+
+.resume-content.linear .left-pane,
+.resume-content.linear .right-pane {
+  width: 100%;
+  padding: 24px 32px;
+  background: white;
+}
+
+.left-pane h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.left-pane p {
+  margin: 4px 0;
+}
+
+.left-pane h3 {
+  margin-top: 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-bottom: 2px solid #facc15;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.left-pane ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+}
+
+.left-pane ul li {
+  margin-bottom: 6px;
+  padding-left: 16px;
+  position: relative;
+}
+
+.left-pane ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #facc15;
+}
+
+.right-pane section {
+  margin-bottom: 32px;
+}
+
+.right-pane h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #facc15;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.experience-entry {
+  margin-bottom: 16px;
+}
+
+.experience-entry p {
+  margin: 6px 0 0;
+}

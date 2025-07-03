@@ -1,0 +1,65 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.back-home {
+  color: #2563eb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.step-tracker {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.step-item {
+  text-align: center;
+  flex: 1;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: lightgray;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.circle.active {
+  background: #2563eb;
+}
+
+.processing-box {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.spinner {
+  margin: 0 auto 1rem;
+  width: 60px;
+  height: 60px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.processing-text {
+  font-size: 1.1rem;
+  color: #555;
+}
